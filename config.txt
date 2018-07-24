@@ -1,0 +1,16 @@
+# mysql数据库信息
+sql_user=root
+sql_password=''
+sql_port=3306
+sql_host=localhost
+sql_database=''
+sql_charset=utf8
+sql_table=''
+
+# mongodb数据库信息
+db_user=test
+db_password=test
+db_port=27001
+db_host=127.0.0.1
+db_database=''
+db_table=''
