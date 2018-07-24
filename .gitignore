@@ -3,3 +3,4 @@
 *.xlsx
 *.idea.*
 /log/*
+__pycache__/*
