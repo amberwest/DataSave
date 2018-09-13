@@ -39,7 +39,7 @@ class ExcelFunc(object):
             writer.sheets = dict((ws.title, ws) for ws in book.worksheets)
             df.to_excel(
                 writer,
-                sheet_name=self.file,
+                sheet_name=self.sheet_name,
                 index=False,
                 header=False,
                 startrow=row_start,
