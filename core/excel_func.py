@@ -33,8 +33,8 @@ class ExcelFunc(object):
 
         else:
             book = load_workbook(self.file)
-            row_start = book[self.file].max_row
-            writer = pd.ExcelWriter(self.sheet_name, engine='openpyxl')
+            row_start = book[self.sheet_name].max_row
+            writer = pd.ExcelWriter(self.file, engine='openpyxl')
             writer.book= book
             writer.sheets = dict((ws.title, ws) for ws in book.worksheets)
             df.to_excel(
